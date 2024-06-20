@@ -13,7 +13,7 @@
                 <a href ="index.html"> Home </a>
             </li>
             <li>
-                <a href="Sobre.html"> Sobre </a>
+                <a href="Sobre.html"> Fatos curiosos </a>
             </li>
             <li>
                 <a href ="Classicos.html"> Clássicos </a>
@@ -22,34 +22,78 @@
     </nav>
 </header>
 <main>
-    <h1 class="sobre_h1"> Pasadena </h1>
+    <h1 class="sobre_h1"> Fatos curiosos </h1>
 </main>
     <div class="sobre_localiza">
         <div><h3> Instituto de Tecnologia da Califórnia - Caltech </h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6281.562575260786!2d-118.125269!3d34.137658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c4a7ea997b91%3A0x3499e7d01a61dd1a!2sInstituto%20de%20Tecnologia%20da%20Calif%C3%B3rnia!5e1!3m2!1spt-BR!2sbr!4v1718743208902!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6281.562575260786!2d-118.125269!3d34.137658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c4a7ea997b91%3A0x3499e7d01a61dd1a!2sInstituto%20de%20Tecnologia%20da%20Calif%C3%B3rnia!5e1!3m2!1spt-BR!2sbr!4v1718743208902!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"  onmousemove="mapaZoom()" onmouseout="mapaNormal()" id="mapa"></iframe>
             <p class="paragrafo_mapa">1200 E California Blvd, Pasadena, CA 91125</p></div>
         <p> Em 25 de fevereiro de 2016, o prefeito de Pasadena declarou o Dia da Teoria do Big Bang em homenagem aos seus residentes fictícios na época de seu 200º episódio.
-                                    Pasadena é a sexta maior cidade do condado de Los Angeles e o principal centro cultural do Vale de San Gabriel. É também a cidade-sede de vários programas de TV, 
-                                    incluindo a sitcom de Chuck Lorre, The Big Bang Theory . A torre da Prefeitura de Pasadena pode ser vista da janela do apartamento de Leonard e Sheldon . 
-                                    O ator convidado Wil Wheaton realmente mora em Pasadena.
+            Pasadena é a sexta maior cidade do condado de Los Angeles e o principal centro cultural do Vale de San Gabriel. É também a cidade-sede de vários programas de TV, 
+            incluindo a sitcom de Chuck Lorre, The Big Bang Theory . A torre da Prefeitura de Pasadena pode ser vista da janela do apartamento de Leonard e Sheldon . 
+            O ator convidado Wil Wheaton realmente mora em Pasadena.
     </div>
+
+    <section class="img_curiosidades">
+                <img src="assets/img/bazinga-sheldon.jpg" alt="error">
+                <p> Bazinga! Essa palavra é o catchphrase icônico de Sheldon Cooper na série. 
+                    Ele a usa para sinalizar que o que disse imediatamente antes deve ser entendido como uma piada. 
+                    A origem da palavra está relacionada a uma empresa chamada Bazinga Novelty Company, cujo slogan era: 
+                    “Se for engraçado, é um Bazinga!” Desde então, tornou-se parte integrante do humor peculiar de Sheldon.
+                </p>
+        </div>
+    </section>
+
+    <section id="curiosidade2" class="img_curiosidades">
+        <img src="assets/img/elonmusk.jpg" alt="error">
+        <p> Elon Musk:
+            <br>
+            <br>
+            O empresário e fundador da SpaceX, Elon Musk, também fez uma breve aparição.
+            Ele apareceu em um episódio em que Howard trabalha em um projeto relacionado ao espaço.
+        </p>
+</div>
+</section>
+
+<section class="img_curiosidades">
+    <img src="assets/img/stephen_hawking.jpg" alt="error">
+    <p> Stephen Hawking:
+        <br>
+        <br>
+        O famoso físico teórico Stephen Hawking apareceu várias vezes na série como ele mesmo.
+        Suas aparições incluíram momentos engraçados e interações com os personagens principais, especialmente Sheldon.
+    </p>
+</div>
+</section>
 
     <form>
         <label for="nome">Nome:</label>
-        <input type="text" id="nome">
-        <br>
+        <input type="text" id="nome" onkeyup="validaNome()">
+        <div id="'txtNome"></div>
         <br>
         <label for="email">E-mail:</label>
-        <input type="email" id="email">
-        <br>
+        <input type="email" id="email" onkeyup="validaEmail()">
+        <div id="'txtEmail"></div>
         <br>
         <label for="assunto">Assunto:</label>
-        <input type="text" id="assunto">
-        <textarea name="assunto" id="assunto" cols="60" rows="5"></textarea>
+        <textarea name="assunto" id="assunto" cols="60" rows="5" onkeyup="validaAssunto()"></textarea>
+        <div id="'txtAssunto"></div>
         <br>
-        <br>
-        <button>Enviar</button>
+        <button onclick="enviar()"> Enviar </button>
     </form>
+
+    <footer>
+        <div id="footer_items">
+            <span id="copyright"> 
+                Agradecimentos especiais para minha companheira de série Taina 
+                <br>
+                <br>
+                &copy 2024 Hellmat Gabriel - Generation Brasil
+            </span>
+        </div>
+    </footer>
+    
+    <script src="./assets/js/script.js"></script>
 
 </body>
 </html>
