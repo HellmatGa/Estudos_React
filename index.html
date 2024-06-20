@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./assets/style/style.css">
 </head>
-<section>
+<header>
     <nav>
         <ul>
             <li>
@@ -16,13 +16,15 @@
                 <a href="Sobre.html"> Sobre </a>
             </li>
             <li>
-                <a href ="Fotos.html"> Imagens que todo fã reconhece </a>
+                <a href ="Classicos.html"> Clássicos </a>
             </li>
         </ul>
     </nav>
+</header>    
 <main>
+    <section class="sobre_descricao">
         <h1> The Big Bang Theory </h1>
-</main>
+
     <div class="primeiro_paragrafo_home"> 
         <img class="img_home" src="assets/img/todos_sofa_abertura.jpg" alt="error">
         <p> The Big Bang Theory é uma série de televisão norte-americana de comédia de situação que estreou na CBS em 24 de setembro de 2007 e terminou em 16 de maio de 2019, totalizando 279 episódios e doze temporadas. Criada por Chuck Lorre e Bill Prady, a série conta com cinco personagens que vivem em Pasadena, entre eles o físico teórico Sheldon Cooper e o físico experimental Leonard Hofstadter, 
@@ -32,8 +34,10 @@
             semelhantes e socialmente desajeitados de Leonard e Sheldon. Os hábitos geeks e o intelecto dos quatro rapazes entra em contraste em relação ao efeito cômico com habilidades sociais
             e senso comum de Penny.
         </p>
-    </div>   
+    </div> 
+    </section>  
 
+    <div class="carousel-container">
     <div class="image-slider">
         <img src="assets/img/primeiroep.jpg" alt="error">
         <img src="assets/img/quadro-penny.jpg" alt="Descrição da imagem 1">
@@ -96,27 +100,10 @@
         <img src="assets/img/treinando_peny.jpg" alt="error">
         <img src="assets/img/troca-fantasia-bernadette.jpg" alt="error">
     </div>
-    
-    <style>
-    .image-slider {
-        display: flex;
-        animation: slide 20s linear infinite;
-    }
-    
-    @keyframes slide {
-        100% { transform: translateX(-100%); }
-        100% { transform: translateX(-300%); }
-    }
-
-    .image-slider img {
-        width: 140px; /* Altere para a largura desejada */
-        height: auto; /* Isso manterá a proporção da imagem */
-    }
-</style>
-
-    <div>
-        <h2> Primeiro episódio da série </h2>
     </div>
+
+    <section class="descricao_primeiroep">
+        <h2> Primeiro episódio da série </h2>
 
     <div class="abertura_home">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/k9LgH30-FSw?si=vpcc6ht7OUX0uMmQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -125,5 +112,33 @@
             O episódio estabelece o tom para o resto da série, explorando as dinâmicas entre os personagens principais e seus diferentes mundos.
         </p>
     </div>
+    </section>
+</main>
+
+<footer>
+    <div id="footer_items">
+        <span id="copyright">
+            &copy 2024 Hellmat Gabriel
+        </span>
+    </div>
+</footer>
+
+    <style>
+    .image-slider {
+        display: flex;
+        animation: slide 20s linear infinite;
+    }
+    
+    @keyframes slide {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-200%); }
+    }
+
+    .image-slider img {
+        width: 140px; /* Altera para a largura desejada */
+        height: auto; /* Manter a proporção da imagem */
+    }
+</style>
+
 </body>
 </html>
