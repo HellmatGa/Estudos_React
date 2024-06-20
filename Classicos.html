@@ -16,7 +16,7 @@
                 <a href="Sobre.html"> Sobre </a>
             </li>
             <li>
-                <a href ="Fotos.html"> Imagens que todo fã reconhece </a>
+                <a href ="Classicos.html"> Clássicos </a>
             </li>
         </ul>
     </nav>
@@ -27,6 +27,7 @@
 
     <!-- ideia é fazer a apresentação das fotos como um "display" que as fotos são apresentadas de maneira automatica -->
     <main></main>
+    <div class="carousel-container">
     <div class="image-slider">
         <img src="assets/img/primeiroep.jpg" alt="error">
         <img src="assets/img/quadro-penny.jpg" alt="Descrição da imagem 1">
@@ -89,23 +90,24 @@
         <img src="assets/img/treinando_peny.jpg" alt="error">
         <img src="assets/img/troca-fantasia-bernadette.jpg" alt="error">
     </div>
+    </div>
     
     <style>
-    .image-slider {
-        display: flex;
-        animation: slide 20s linear infinite;
-    }
+        .image-slider {
+            display: flex;
+            animation: slide 20s linear infinite;
+        }
+        
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-200%); }
+        }
     
-    @keyframes slide {
-        0% { transform: translateX(0); }
-        100% { transform: translateX(-200%); }
-    }
-
-    .image-slider img {
-        width: 140px; /* Altere para a largura desejada */
-        height: auto; /* Isso manterá a proporção da imagem */
-    }
-</style>
+        .image-slider img {
+            width: 140px; /* Altera para a largura desejada */
+            height: auto; /* Manter a proporção da imagem */
+        }
+    </style>
     
 </body>
 </html>
